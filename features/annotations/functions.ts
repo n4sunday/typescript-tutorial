@@ -15,6 +15,16 @@ const nultiply = function (a: number, b: number): number {
     return a * b
 }
 
+const logger = (message: string): void => {
+    console.log(message)
+    return undefined
+}
+
+const throwError = (message: string): void => {
+    if (!message) {
+        throw new Error(message)
+    }
+}
 
 
 
