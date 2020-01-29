@@ -25,6 +25,13 @@ let newCarMakers = carMakers.map((car: string): string => {
 console.log('newCarMakers: ', newCarMakers)
 
 
+// Flexible types
+const importantDates: (Date | string)[] = [new Date(), '2020-10-10']
+importantDates.push('2019-04-20')
+importantDates.push(new Date())
+console.log('importantDates: ', importantDates)
+
+
 
 
 
