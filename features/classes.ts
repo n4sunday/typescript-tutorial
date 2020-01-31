@@ -17,21 +17,27 @@ class Vehicle {
     }
 }
 
-// class Car extends Vehicle {
-//     drive(): void {
-//         console.log('room')
-//     }
+class Car extends Vehicle {
+    constructor(public wheels: number, color: string) {
+        super(color)
 
-//     startDrivingProcess(): void {
-//         this.drive()
-//         this.honk()
-//     }
-// }
+    }
+    drive(): void {
+        console.log('room')
+    }
+
+    startDrivingProcess(): void {
+        this.drive()
+        this.honk()
+    }
+}
 
 const vehicle = new Vehicle('green')
-console.log(vehicle.color);
+console.log(vehicle.color)
 
 // vehicle.drive()
 
-// const car = new Car()
-// car.startDrivingProcess()
+const car = new Car(4, 'blue')
+//car.startDrivingProcess()
+console.log(car)
+
