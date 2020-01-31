@@ -1,4 +1,13 @@
 class Vehicle {
+    // Pattern 1
+    constructor(public color: string) { }
+
+    // Pattern 2
+    // color: string
+    // constructor(color: string) {
+    //     this.color = color
+    // }
+
     public drive(): void {
         console.log('chugga chugga')
     }
@@ -8,19 +17,21 @@ class Vehicle {
     }
 }
 
-class Car extends Vehicle {
-    drive(): void {
-        console.log('room')
-    }
+// class Car extends Vehicle {
+//     drive(): void {
+//         console.log('room')
+//     }
 
-    startDrivingProcess(): void {
-        this.drive()
-        this.honk()
-    }
-}
+//     startDrivingProcess(): void {
+//         this.drive()
+//         this.honk()
+//     }
+// }
 
-const vehicle = new Vehicle()
-vehicle.drive()
+const vehicle = new Vehicle('green')
+console.log(vehicle.color);
 
-const car = new Car()
-car.startDrivingProcess()
+// vehicle.drive()
+
+// const car = new Car()
+// car.startDrivingProcess()
